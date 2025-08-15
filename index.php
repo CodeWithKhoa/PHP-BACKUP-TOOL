@@ -31,9 +31,9 @@ ini_set('memory_limit', '512M'); // 512 Megabytes
 define("DEBUG_MODE", true);
 
 // --- Cấu hình kết nối Cơ sở dữ liệu (CSDL) ---
-define("DB_USER", 'root');          // Tên người dùng CSDL
-define("DB_PASSWORD", '');           // Mật khẩu CSDL
-define("DB_NAME", 'vtechon');     // Tên CSDL cần sao lưu
+define("DB_USER", 'your_user_db');          // Tên người dùng CSDL
+define("DB_PASSWORD", 'your_pw_db');           // Mật khẩu CSDL
+define("DB_NAME", 'your_name_db');     // Tên CSDL cần sao lưu
 define("DB_HOST", 'localhost');       // Host của CSDL
 define("DB_CHARSET", 'utf8mb4');    // Bảng mã ký tự
 
