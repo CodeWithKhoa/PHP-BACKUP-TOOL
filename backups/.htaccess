@@ -1,0 +1,10 @@
+# Bật module Rewrite của Apache
+RewriteEngine On
+
+# Chặn không cho server tự động liệt kê file (giữ nguyên)
+Options -Indexes
+
+# QUAN TRỌNG: Chặn tất cả các yêu cầu truy cập trực tiếp đến file có đuôi .zip
+# [F] có nghĩa là Forbidden (Cấm - trả về lỗi 403)
+# [NC] có nghĩa là No Case (không phân biệt chữ hoa/thường, chặn cả .zip và .ZIP)
+RewriteRule \.(zip)$ - [F,NC]
